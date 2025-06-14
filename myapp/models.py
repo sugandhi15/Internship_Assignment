@@ -9,3 +9,15 @@ class User(models.Model):
 
     def __str__(self):
         return self.email
+    
+
+
+
+class TelegramUser(models.Model):
+    username = models.CharField(max_length=100, unique=True)
+    telegram_id = models.BigIntegerField(unique=True)
+    first_name = models.CharField(max_length=100, blank=True, null=True)
+    last_name = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return f"({self.username}  -  {self.first_name})"

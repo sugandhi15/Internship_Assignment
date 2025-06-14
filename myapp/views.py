@@ -3,7 +3,6 @@ from rest_framework.views import APIView
 from django.http import JsonResponse
 from .serializers import UserSerializer
 from .models import User
-from django.contrib.auth.tokens import default_token_generator
 from django.conf import settings
 import jwt
 from django.contrib.auth.hashers import check_password
