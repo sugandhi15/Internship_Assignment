@@ -1,8 +1,12 @@
 from django.core.management.base import BaseCommand
 from telegram.ext import Updater, CommandHandler
 from myapp.models import TelegramUser
+from dotenv import load_dotenv
+import os
 
-TELEGRAM_BOT_TOKEN = '7931603576:AAGnnoa1SNeW1B7Z3EAwSy6wT62Dj4oHi-8'
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN =  os.getenv('TELEGRAM_BOT_TOKEN')
 
 def start(update, context):
     user = update.message.from_user
