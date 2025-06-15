@@ -67,9 +67,9 @@ A Django REST Framework project demonstrating backend development skills includi
     7.Start Celery Worker
         celery -A Internship worker -l info --pool=solo
 
-        ![Celery Mail](Assets/CeleryMail.jpeg)
+        ![Celery Mail](https://github.com/sugandhi15/Internship_Assignment/blob/main/Assets/CeleryMail.jpeg)
 
     8.Start Telegram bot
         python manage.py telegram_bot
 
-        ![Telegram Bot Working](Assets/Telegram_Bot.png)
+        ![Telegram Bot Working](https://github.com/sugandhi15/Internship_Assignment/blob/main/Assets/Telegram_Bot.png)
