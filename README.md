@@ -106,3 +106,13 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
 
 
 ---
+
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- GitHub: [sugandhi15](https://github.com/sugandhi15)
+- Email: sugandhibansal26@gmail.com
+
+Thanks for checking out the project!
