@@ -75,15 +75,11 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
 6.Run the Server
 -    python manage.py runserver
 
-
 7. Start Celery Worker  
 -   celery -A Internship worker -l info --pool=solo  
 
-
 8. Start Telegram bot  
 -   python manage.py telegram_bot  
-
-
 
 ---
 
