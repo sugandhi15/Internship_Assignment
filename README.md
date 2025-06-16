@@ -7,7 +7,7 @@ A Django REST Framework project demonstrating backend development skills includi
 ## Tech Stack
 
 - **Django**
-- **Django RESt Framework**
+- **Django REST Framework**
 - **PostGreSQL**
 - **Celery**
 - **Telegram Bot API**
@@ -20,7 +20,7 @@ A Django REST Framework project demonstrating backend development skills includi
 ## Features
 
 1. API Endpoints
-    Public : can be accesed by anyone.
+    Public : can be accessed by anyone.
     Protected : needs token or JWT.
 
 2. Celery 
@@ -45,7 +45,7 @@ A Django REST Framework project demonstrating backend development skills includi
 -    On Linux/Mac : source venv/bin/activate  
 -    On Windows: myenv\Scripts\activate
 
-2.Install Requiremnets
+2.Install Requirements
 -    pip install -r requirements.txt
 
 3.Setup .env file ( in root directory)
@@ -80,15 +80,9 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
 -   celery -A Internship worker -l info --pool=solo  
 
 
-   ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
-
-
-
 8. Start Telegram bot  
 -   python manage.py telegram_bot  
 
-
-   ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
 
 
 ---
@@ -102,4 +96,17 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
 ---
 
 
-    
+## Celery Task – Email Confirmation
+
+   ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
+
+
+---
+
+## Telegram Bot – Screenshot
+
+
+   ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
+
+
+---
