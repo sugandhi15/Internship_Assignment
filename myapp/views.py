@@ -56,6 +56,7 @@ class registration(APIView):
             return JsonResponse({"error": str(e)}, status=500)
         
 
+
         
 
 class login(APIView):

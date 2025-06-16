@@ -143,7 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # JWT
 
-# Optional (if you want to centralize JWT configs)
 JWT_SETTINGS = {
     'ACCESS_TOKEN_LIFETIME': datetime.timedelta(hours=1),
     'ALGORITHM': 'HS256',
@@ -163,11 +162,9 @@ DEFAULT_FROM_EMAIL =  os.getenv('EMAIL_HOST_USER')
 
 # celery
 
-# set the celery broker url
+
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 
-# set the celery result backend
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 
-# set the celery timezone
 CELERY_TIMEZONE = 'UTC'
