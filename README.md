@@ -36,13 +36,6 @@ A Django REST Framework project demonstrating backend development skills includi
 ---
 
 
-# Link to API Documentation - 
-[Postman Collection Link](https://documenter.getpostman.com/view/37031551/2sB2x8ErFC)
-
-
----
-
-
 
 ##   Set up to run the project
 
@@ -98,6 +91,15 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
    ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
 
 
+---
+
+
+# Link to API Documentation - 
+
+[Postman Collection Link](https://documenter.getpostman.com/view/37031551/2sB2x8ErFC)
+
+
+---
 
 
     
