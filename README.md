@@ -1,22 +1,23 @@
-#####                                        Django Internship Assignment 
+#                                       Django Internship Assignment 
 
 
 A Django REST Framework project demonstrating backend development skills including API Authentication, Celery Background Tasks, Telegram Bot Integration.
 
 
-# Tech Stack
+## Tech Stack
 
-- Django
-- Django RESt Framework
-- PostGreSQL
-- Celery
-- Telegram Bot API
-- JWT
-
-
+- **Django**
+- **Django RESt Framework**
+- **PostGreSQL**
+- **Celery**
+- **Telegram Bot API**
+- **JWT**
 
 
-# Features
+---
+
+
+## Features
 
 1. API Endpoints
     Public : can be accesed by anyone.
@@ -32,26 +33,30 @@ A Django REST Framework project demonstrating backend development skills includi
     Stores the Telegram username into the database.
 
 
+---
 
 
-Link to API Documentation -  https://documenter.getpostman.com/view/37031551/2sB2x8ErFC
+# Link to API Documentation - 
+[Postman Collection Link](https://documenter.getpostman.com/view/37031551/2sB2x8ErFC)
+
+
+---
 
 
 
-
-#   Set up to run the project
+##   Set up to run the project
 
 
 1.Create Virtual Environment
-    python -m venv myenv
-    On Linux/Mac : source venv/bin/activate  
-    On Windows: myenv\Scripts\activate
+-    python -m venv myenv
+-    On Linux/Mac : source venv/bin/activate  
+-    On Windows: myenv\Scripts\activate
 
 2.Install Requiremnets
-    pip install -r requirements.txt
+-    pip install -r requirements.txt
 
 3.Setup .env file ( in root directory)
-    /projectname/.env
+-    /projectname/.env
 
         DEBUG=False
         SECRET_KEY=django-insecure-0bd01^i&xor+v&d9uwh0*3ye9__p$c7(s-02nh0#8x$$graub2
@@ -64,17 +69,17 @@ Link to API Documentation -  https://documenter.getpostman.com/view/37031551/2sB
         TELEGRAM_BOT_TOKEN=7931603576:AAGnnoa1SNeW1B7Z3EAwSy6wT62Dj4oHi-8
 
 4.Apply Migrations
-    python manage.py migrate
+-    python manage.py migrate
 
 5.create SuperUser
-    python manage.py createsuperuser
+-    python manage.py createsuperuser
 
 6.Run the Server
-    python manage.py runserver
+-    python manage.py runserver
 
 
 7. Start Celery Worker  
-   celery -A Internship worker -l info --pool=solo  
+-   celery -A Internship worker -l info --pool=solo  
 
 
    ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
@@ -82,8 +87,8 @@ Link to API Documentation -  https://documenter.getpostman.com/view/37031551/2sB
 
 
 8. Start Telegram bot  
-   python manage.py telegram_bot  
-   
+-   python manage.py telegram_bot  
+
 
    ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
 
