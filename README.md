@@ -34,45 +34,47 @@ A Django REST Framework project demonstrating backend development skills includi
 
 #   Set up to run the project
 
-    1.Create Virtual Environment
-        python -m venv myenv
-        On Linux/Mac : source venv/bin/activate  
-        On Windows: myenv\Scripts\activate
+1.Create Virtual Environment
+    python -m venv myenv
+    On Linux/Mac : source venv/bin/activate  
+    On Windows: myenv\Scripts\activate
 
-    2.Install Requiremnets
-        pip install -r requirements.txt
+2.Install Requiremnets
+    pip install -r requirements.txt
 
-    3.Setup .env file ( in root directory)
-        /projectname/.env
+3.Setup .env file ( in root directory)
+    /projectname/.env
 
-            DEBUG=False
-            SECRET_KEY=django-insecure-0bd01^i&xor+v&d9uwh0*3ye9__p$c7(s-02nh0#8x$$graub2
-            EMAIL_BACKEND = django.core.mail.backends.smtp.EmailBackend
-            EMAIL_HOST = smtp.gmail.com
-            EMAIL_PORT = 587
-            EMAIL_USE_TLS = True
-            EMAIL_HOST_USER = sugandhibansal26@gmail.com
-            EMAIL_HOST_PASSWORD=bfhu tvdh mfzu slxc
-            TELEGRAM_BOT_TOKEN=7931603576:AAGnnoa1SNeW1B7Z3EAwSy6wT62Dj4oHi-8
+        DEBUG=False
+        SECRET_KEY=django-insecure-0bd01^i&xor+v&d9uwh0*3ye9__p$c7(s-02nh0#8x$$graub2
+        EMAIL_BACKEND = django.core.mail.backends.smtp.EmailBackend
+        EMAIL_HOST = smtp.gmail.com
+        EMAIL_PORT = 587
+        EMAIL_USE_TLS = True
+        EMAIL_HOST_USER = sugandhibansal26@gmail.com
+        EMAIL_HOST_PASSWORD=bfhu tvdh mfzu slxc
+        TELEGRAM_BOT_TOKEN=7931603576:AAGnnoa1SNeW1B7Z3EAwSy6wT62Dj4oHi-8
 
-    4.Apply Migrations
-        python manage.py migrate
+4.Apply Migrations
+    python manage.py migrate
 
-    5.create SuperUser
-        python manage.py createsuperuser
+5.create SuperUser
+    python manage.py createsuperuser
 
-    6.Run the Server
-        python manage.py runserver
+6.Run the Server
+    python manage.py runserver
 
-    7.Start Celery Worker
-     celery -A Internship worker -l info --pool=solo
 
-     ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
+7. Start Celery Worker  
+   celery -A Internship worker -l info --pool=solo  
 
-    8.Start Telegram bot
-     python manage.py telegram_bot
+   ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
 
-     ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
+8. Start Telegram bot  
+   python manage.py telegram_bot  
+
+   ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
+
 
 
 
