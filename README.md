@@ -69,16 +69,16 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token-here
 4.Apply Migrations
 -    python manage.py migrate
 
-5.create SuperUser
+5.Create SuperUser
 -    python manage.py createsuperuser
 
 6.Run the Server
 -    python manage.py runserver
 
-7. Start Celery Worker  
+7.Start Celery Worker  
 -   celery -A Internship worker -l info --pool=solo  
 
-8. Start Telegram bot  
+8.Start Telegram bot  
 -   python manage.py telegram_bot  
 
 ---
