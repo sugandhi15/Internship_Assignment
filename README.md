@@ -14,25 +14,33 @@ A Django REST Framework project demonstrating backend development skills includi
 - JWT
 
 
+
+
 # Features
 
-    1. API Endpoints
-        Public : can be accesed by anyone.
-        Protected : needs token or JWT.
+1. API Endpoints
+    Public : can be accesed by anyone.
+    Protected : needs token or JWT.
 
-    2. Celery 
-        Handles background tasks or long-running operations. 
-        Background task: Send email after user registration.
+2. Celery 
+    Handles background tasks or long-running operations. 
+    Background task: Send email after user registration.
 
-    3. Telegram Bot
-        Allows user to interact with our Django application through Telegram.
-        A Telegram bot that listens to `/start`.
-        Stores the Telegram username into the database.
+3. Telegram Bot
+    Allows user to interact with our Django application through Telegram.
+    A Telegram bot that listens to `/start`.
+    Stores the Telegram username into the database.
+
+
+
+
+Link to API Documentation -  https://documenter.getpostman.com/view/37031551/2sB2x8ErFC
 
 
 
 
 #   Set up to run the project
+
 
 1.Create Virtual Environment
     python -m venv myenv
@@ -68,10 +76,14 @@ A Django REST Framework project demonstrating backend development skills includi
 7. Start Celery Worker  
    celery -A Internship worker -l info --pool=solo  
 
+
    ![Celery Mail](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/CeleryMail.jpeg)
+
+
 
 8. Start Telegram bot  
    python manage.py telegram_bot  
+   
 
    ![Telegram Bot Working](https://raw.githubusercontent.com/sugandhi15/Internship_Assignment/main/Assets/Telegram_Bot.png)
 
@@ -79,4 +91,3 @@ A Django REST Framework project demonstrating backend development skills includi
 
 
     
-    Link to API Documentation -  https://documenter.getpostman.com/view/37031551/2sB2x8ErFC
