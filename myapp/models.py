@@ -14,6 +14,7 @@ class User(models.Model):
 
 
 class TelegramUser(models.Model):
+    id = models.AutoField(primary_key=True)
     username = models.CharField(max_length=100, unique=True)
     telegram_id = models.BigIntegerField(unique=True)
     first_name = models.CharField(max_length=100, blank=True, null=True)

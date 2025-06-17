@@ -18,7 +18,7 @@ def start(update, context):
             'last_name': user.last_name,
         }
     )
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Welcome! You've been registered.")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"Welcome! You've been registered. Your Database id = {TelegramUser.objects.get(telegram_id=user.id).id}")
 
 class Command(BaseCommand):
     help = 'Run the Telegram bot'
